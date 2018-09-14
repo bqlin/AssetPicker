@@ -7,6 +7,7 @@
 //
 
 #import "PhotosManager.h"
+#import <Photos/Photos.h>
 
 @implementation PhotosManager
 

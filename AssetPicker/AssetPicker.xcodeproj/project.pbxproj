@@ -10,6 +10,14 @@
 		FB929656214A8DF900494189 /* AssetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = FB929654214A8DF900494189 /* AssetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB92968E214A903E00494189 /* PhotosManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92968C214A903E00494189 /* PhotosManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB92968F214A903E00494189 /* PhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB92968D214A903E00494189 /* PhotosManager.m */; };
+		FBC9F279214B623A00D1FB99 /* AssetPickerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC9F277214B623A00D1FB99 /* AssetPickerUtil.h */; };
+		FBC9F27A214B623A00D1FB99 /* AssetPickerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F278214B623A00D1FB99 /* AssetPickerUtil.m */; };
+		FBC9F281214B9A7E00D1FB99 /* CameraAuthorizationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC9F27B214B9A7E00D1FB99 /* CameraAuthorizationItem.h */; };
+		FBC9F282214B9A7E00D1FB99 /* AuthorizationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F27C214B9A7E00D1FB99 /* AuthorizationItem.m */; };
+		FBC9F283214B9A7E00D1FB99 /* AuthorizationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC9F27D214B9A7E00D1FB99 /* AuthorizationItem.h */; };
+		FBC9F284214B9A7E00D1FB99 /* CameraAuthorizationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F27E214B9A7E00D1FB99 /* CameraAuthorizationItem.m */; };
+		FBC9F285214B9A7E00D1FB99 /* PhotoAuthorizationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC9F27F214B9A7E00D1FB99 /* PhotoAuthorizationItem.h */; };
+		FBC9F286214B9A7E00D1FB99 /* PhotoAuthorizationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC9F280214B9A7E00D1FB99 /* PhotoAuthorizationItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +26,14 @@
 		FB929655214A8DF900494189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB92968C214A903E00494189 /* PhotosManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosManager.h; sourceTree = "<group>"; };
 		FB92968D214A903E00494189 /* PhotosManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosManager.m; sourceTree = "<group>"; };
+		FBC9F277214B623A00D1FB99 /* AssetPickerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetPickerUtil.h; sourceTree = "<group>"; };
+		FBC9F278214B623A00D1FB99 /* AssetPickerUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetPickerUtil.m; sourceTree = "<group>"; };
+		FBC9F27B214B9A7E00D1FB99 /* CameraAuthorizationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraAuthorizationItem.h; sourceTree = "<group>"; };
+		FBC9F27C214B9A7E00D1FB99 /* AuthorizationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationItem.m; sourceTree = "<group>"; };
+		FBC9F27D214B9A7E00D1FB99 /* AuthorizationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationItem.h; sourceTree = "<group>"; };
+		FBC9F27E214B9A7E00D1FB99 /* CameraAuthorizationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraAuthorizationItem.m; sourceTree = "<group>"; };
+		FBC9F27F214B9A7E00D1FB99 /* PhotoAuthorizationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAuthorizationItem.h; sourceTree = "<group>"; };
+		FBC9F280214B9A7E00D1FB99 /* PhotoAuthorizationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAuthorizationItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		FB929653214A8DF900494189 /* AssetPicker */ = {
 			isa = PBXGroup;
 			children = (
+				FB929691214A93F900494189 /* Authorization */,
 				FB92968C214A903E00494189 /* PhotosManager.h */,
 				FB92968D214A903E00494189 /* PhotosManager.m */,
+				FBC9F277214B623A00D1FB99 /* AssetPickerUtil.h */,
+				FBC9F278214B623A00D1FB99 /* AssetPickerUtil.m */,
 			);
 			path = AssetPicker;
 			sourceTree = "<group>";
@@ -66,6 +85,19 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		FB929691214A93F900494189 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9F27D214B9A7E00D1FB99 /* AuthorizationItem.h */,
+				FBC9F27C214B9A7E00D1FB99 /* AuthorizationItem.m */,
+				FBC9F27B214B9A7E00D1FB99 /* CameraAuthorizationItem.h */,
+				FBC9F27E214B9A7E00D1FB99 /* CameraAuthorizationItem.m */,
+				FBC9F27F214B9A7E00D1FB99 /* PhotoAuthorizationItem.h */,
+				FBC9F280214B9A7E00D1FB99 /* PhotoAuthorizationItem.m */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,7 +105,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC9F285214B9A7E00D1FB99 /* PhotoAuthorizationItem.h in Headers */,
+				FBC9F283214B9A7E00D1FB99 /* AuthorizationItem.h in Headers */,
+				FBC9F281214B9A7E00D1FB99 /* CameraAuthorizationItem.h in Headers */,
 				FB929656214A8DF900494189 /* AssetPicker.h in Headers */,
+				FBC9F279214B623A00D1FB99 /* AssetPickerUtil.h in Headers */,
 				FB92968E214A903E00494189 /* PhotosManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB92968F214A903E00494189 /* PhotosManager.m in Sources */,
+				FBC9F286214B9A7E00D1FB99 /* PhotoAuthorizationItem.m in Sources */,
+				FBC9F284214B9A7E00D1FB99 /* CameraAuthorizationItem.m in Sources */,
+				FBC9F27A214B623A00D1FB99 /* AssetPickerUtil.m in Sources */,
+				FBC9F282214B9A7E00D1FB99 /* AuthorizationItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
